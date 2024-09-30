@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubravka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34; /* Tamnija pozadina */
+            color: white;
+        }
+
+        /* Postavljanje slika u mrežu */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Stilovi za video */
+        video {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Stilovi za fullscreen modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="dubravkas/slika1.jpg" alt="slika1">
+        <img src="dubravkas/slika2.jpg" alt="slika2">
+        <img src="dubravkas/slika13.jpg" alt="">
+        <img src="dubravkas/slika38.png" alt="">
+        <img src="dubravkas/slika5.jpg" alt="slika5">
+        <img src="dubravkas/slika7.jpg" alt="slika7">
+        <img src="dubravkas/slika8.png" alt="slika8">
+        <img src="dubravkas/slika9.png" alt="slika9">
+        <img src="dubravkas/slika10.jpg" alt="slika10">
+        <img src="dubravkas/slika12.jpg" alt="">
+        <img src="dubravkas/slika15.jpg" alt="">
+        <img src="dubravkas/slika16.jpg" alt="">
+        <img src="dubravkas/slika17.jpg" alt="">
+        <img src="dubravkas/slika18.jpg" alt="">
+        <img src="dubravkas/slika19.jpg" alt="">
+        <img src="dubravkas/slika21.jpg" alt="">
+        <img src="dubravkas/slika23.png" alt="">
+        <img src="dubravkas/slika24.jpg" alt="">
+        <img src="dubravkas/slika25.png" alt="">
+        <img src="dubravkas/slika26.jpg" alt="">
+        <img src="dubravkas/slika36.jpg" alt="slika3">
+        <img src="dubravkas/slika4.jpg" alt="slika4">
+        <img src="dubravkas/slika27.jpg" alt="">
+        <img src="dubravkas/slika30.jpg" alt="">
+        <img src="dubravkas/slika31.png" alt="">
+        <img src="dubravkas/slika39.png" alt="">
+        <img src="dubravkas/slika35.jpg" alt="">
+        <img src="dubravkas/slika3.jpg" alt="">
+        <img src="dubravkas/slika28.jpg" alt="">
+        <img src="dubravkas/slika32.jpg" alt="">
+        <img src="dubravkas/slika14.png" alt="slika6">
+        <img src="dubravkas/slika29.png" alt="">
+        <img src="dubravkas/slika22.png" alt="">
+        <img src="dubravkas/slika6.png" alt="">
+        <img src="dubravkas/slika20.png" alt="">
+        <img src="dubravkas/slika40.png" alt="">    
+        <img src="dubravkas/slika11.png" alt="">
+        <img src="dubravkas/slika34.jpg" alt="">
+        <img src="dubravkas/slika37.jpg" alt="">
+        <img src="dubravkas/slika33.jpg" alt="">
+    </div>
+
+    <video width="400" height="600" controls>
+        <source src="dubravkas/video1.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+    </video>
+
+    <!-- Modal za fullscreen prikaz slike -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgInModal">
+    </div>
+
+    <script>
+        // Uzmi sve slike iz galerije
+        const images = document.querySelectorAll('.gallery img');
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('imgInModal');
+        const closeModal = document.querySelector('.close');
+
+        // Dodaj event listener za svaki klik na sliku
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                modal.style.display = "flex"; // Prikaži modal
+                modalImg.src = img.src; // Postavi sliku u modal
+            });
+        });
+
+        // Zatvaranje modala
+        closeModal.addEventListener('click', () => {
+            modal.style.display = "none"; // Sakrij modal
+        });
+
+        // Zatvaranje modala pritiskom na Escape dugme
+        window.addEventListener('keydown', (event) => {
+            if (event.key === "Escape") {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
