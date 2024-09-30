@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NASTAVNICI</title>
+<link rel="icon" href="logo/logo2.png">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9e980; /* Background color */
+    color: #333; /* Text color */
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto; /* Centered with margin */
+    background-color: #88B0B6; /* Background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 80%; /* Width of container */
+  }
+
+  .container img {
+    margin: 10px 0; /* Space around image */
+    display: block; /* Block element */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .container p {
+    text-align: center; /* Center text */
+    font-size: 1.1em; /* Font size */
+    line-height: 1.5; /* Line height for readability */
+  }
+  .images img {
+    margin: 0 15px; /* Povećanje razmaka između slika */
+    border-radius: 8px; /* Zaobljeni uglovi */
+    max-width: 100%; /* Odgovarajuća slika */
+    height: auto; /* Održava odnos širine i visine */
+    width: 20%; /* Širina slika */
+}
+  .images {
+            display: flex; /* Display images in a row */
+            justify-content: center; /* Center the images */
+            margin: 10px 0; /* Space around image container */
+  }
+  button {
+    text-decoration: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+
+  button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+
+  @keyframes ani {
+    0% { background-position: 0%; }
+    100% { background-position: 400%; }
+  }
+
+  button:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+  }
+
+  button:hover::before {
+    filter: blur(20px);
+  }
+
+  button:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .container {
+      width: 95%; /* Full width on small screens */
+    }
+
+    h1, h2, h3, p {
+      font-size: 1em; /* Responsive font size */
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>DANAS VAM PREDSTAVLJAMO:</h1>
+  <h2>Aleksandar Vicanovic (Gile)</h2>
+  <img src="images/27021878_2028996544052694_4684974757381384389_o.jpg" alt="Gile">
+  <p>Aleksandar (GILE, Gizdravi, Krgavi) Vicanovic predaje fizičko u OS školi Jovan Dučić centralna i Patkovaca. Ženu nema dijete ima, nazalost, rastao se od žene. Razredni je starješina IX-4. Njegov unikatan video možete pogledati pritiskom na dugme.</p>
+  <button onclick="window.location.href='gile.html'">VIDEO</button>
+</div>
+<div class="container">
+  <p><b><font size="5">Dubravka Trivakovic Mijatovic (Triceratops)</font></b></p>
+  <img src="images/ducatriceratops.jpg" alt=":(" width="80%" height="auto">
+  <font size="5"><b>Ovo je nastavnica Dubravka Trivakovic Mijatovic (Triceratops, Duca) ona je najjaca nastavnica u cijeloj skoli voli djecu i ponekad ih nazove ciganima. Ona zove roditelje mnogo cesto zato nam je svima zao IX-5 kojem je ona razredni starjesina. Njen sin se zove Andrej i on radi u crvenom krstu. On pusi vape i cijela kuca mirise na jagode.</font></b>
+</div>
+<p align="center"><b><font size="7">Biljana Matic</font></b></p>
+<div class="container">
+<img src="images/bilja.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Jedna od najboljih nastavnica iako zna nekad da samara sa gradivom ali je super.Predaje srpski jezik razredna je IX-3.Misli da se Njegos Vasilic inace njen ucenik drogira ali ne zamjeramo joj.</font></b>  
+</div>
+<p align="center"><b><font size="7">Rade Tomic</font></b></p>
+<div class="container">
+  <div class="images">
+<img src="images/rade.jpg" alt=":(" width="30%" height="55%">
+<img src="images/rade zena.jpg" alt=":(" width="30%" height="100%" align="right">
+</div>
+<b><font size="6">Inace prekul nastavnik hemije.Tu je nazalost na zamjeni ali ce nam makar on biti do kraja osnovne skole.Jedini problem u zivotu su mu dlake koje mu rastu po prstima.Vozi automobil marke Skoda i mnogo je smash.Neki ga zovu trokut ili trougao jer imaju teoriju da brije samo ovaj tu dio na prsima koji otkopca.Razrednik je IX-1. </font></b>
+</div>
+<p align="center"><b><font size="7">Dalibor Stevic</font></b></p>
+<div class="container">
+<img src="images/dado.jpg" alt=":(">
+<b><font size="6">Dalibor Stevic(Slizani morz,slizana dzukela,vepar iz lopara,slizani sisonja...) je nastavnik informatike u Osnovnoj skoli Jovan Ducic.Razrednik je VI-5 i ima sise kao u vepra.Kod njega se moze izraziti definicija kupljenje diplome.</font></b>
+</div>
+<p align="center"><b><font size="7">Rada Vlacic</font></b></p>
+<div class="container">
+<img src="images/rada.png" alt=":(" id="rada">
+<b><font size="6">Ovo je Rada Vlacic(Rada gromada,Rada megregor) i ona predaje fiziku.Ona je jako dosadna i dobra nastavnica jednom mom prijatelju je dala jedinicu jer su ostali pricali.</font></b>
+</div>
+<p align="center"><b><font size="7">Danijela Glibo Plavsic</font></b></p>
+<div class="container">
+<img src="images/dani.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Ovo je Danijela Glibo Plavsic(Glibara,Gliba).Ona je razredni starjesina IX-2.Zivi u Brckom i ucenici mnogo vole da je zajebavaju za njeno mjesto prebivalista.Predaje geografiju i trazi da se zna mnogo za 5.Maltretira ucenike.Radila je kao vaspitacica u vrticu.Voli malu djecu a fotografije svoje male djece drzi u novcaniku.Vozi automobil marke Peugeot 307 sive boje(M75-E-720) mnogi djaci je zajebavaju za njeno prevozno sredstvo.Ima malo buljave oci ali nema veze.</font></b>
+</div>
+<p align="center"><b><font size="7">Sinisa Pavlovic(Cerak)</font></b></p>
+<div class="container">
+<img src="images/cerak.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Sinisa Pavlovic(Cerak,Gavran) je nastavnik fizickog obrazovanja u Osnovnoj skoli u Patkovaci.Misli da je neki veliki kurac u skoli ali zapravo je glup kao taj isti kurac.Njemu je najveci cilj da sjebe ucenike ali mu bas to ne ide od ruke.</font></b>
+</div>
+<p align="center"><b><font size="7">Dragana Jovanovic Stojancevic</font></b></p>
+<div class="container">
+<img src="images/IMG_20230504_221220.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Dragana Jovanovic Stojancevic je jedna jako grozna nastavnica.Kome god da je predavala ili predaje rece vam ovo isto.Ona vrsi teror nad ucenicima.Kada pita nekoga za ocjenu broj 5 ona uvijek izmuze sve sto se da izmuzti iz tog (m)ucenika.Prije nego sto se zaposlila u nasu skolu radila je kao ekstremni mucenik u logoru Jasenovac na strani narcista.</font></b>
+</div>
+<p align="center"><b><font size="7">Tenzila Milojica(Godzila)</font></b></p>
+<div class="container">
+<img src="images/tenzija.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Tenzila Milojica(Godzila) je najbolji pjevac u nasoj skoli tjera djecu koja idu u muzicku skolu(Ana Djuric) da sviraju klavijaturu koju skola posjeduje kresti kao papagaj i omiljeni kompozitor joj je Mokranjac.Ona je inace glumila u jednom od najpoznatijih domacih filmova "Mala nocna muzika" u glumi izvjesne Paune Paunovic.Taj video mozete pogledati pritiskom na dugme.</font></b>
+<button onclick="window.location.href='tenzila.html'" class="button">VIDEO</button>
+</div>
+<p align="center"><b><font size="7">Vesna Tepavcevic(Vesna Zmijanac)</font></b></p>
+<div class="container">
+<img src="images/VESNA.JPG" alt=":( width="20%" height="30%">
+<b><font size="6">Vesna Tepavcevic(Vesna Zmijanac) je nastavnica srpskog jezika u nasoj skoli.Razredni je starjesina IX-6.Kod nje se moze izraziti definicija neravnopravnosti jer ima svoje miljenike kojima nista ne zeli uciniti dok ima i ucenika koje mrzi i ne da im nista smanjuje vladanje...</font></b>
+</div>
+<p align="center"><b><font size="7">Jelena Pavlovic</font></b></p>
+<div class="container">
+<img src="images/jela.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Jelena Pavlovic je najbolja nastavnica u skoli.Pusta cetvrtkom u pekaru i svi je mnogo vole jer se brine za nas ne dozvoljava da ostanemo gladni.Predaje muzicko i jako je opustena na casu.</font></b>
+</div>
+<p align="center"><b><font size="7">Svetislav Pejcic(Garaza)</font></b></p>
+<div class="container">
+<img src="images/garaza.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Svetislav Pejcic(Garaza) je nastavnik vjeronauke u nasoj skoli.Nadimak Garaza je dobio po svom podbradku koji je kao pista za sletanje aviona.Okej je nastavnik nece da nas pusti na fizicko.Vezano je za cas.</font></b>
+</div>
+<p align="center"><b><font size="7">Milan Lazic(Milaz)</font></b></p>
+<div class="container">
+  <div class="images">
+<img src="images/milaz.jpg" alt=":("  id="milaz" width="20%">
+<img src="images/milazskuter.jpg" alt=":(" width="50%" height="55%" align="right">
+</div>
+<b><font size="6">Milan Lazic(Milaz,jednorog(zbog frizure)) je nastavnik tehnickog obrazovanja u nasoj skoli.Inace legendaran nastavnik po svojim forama i fazonima.Ima traume od americkih filmova(boji se ucenika koji drze ruke pod klupom jer misli da im je ispod klupe pistolj).Odrzava sekcije svake srijede i voli da obilazi buvljake.Hobi mu je da trazi rimske kovanice sa detektorom metala u pratnji svoga kuma.Jednom prilikom je bio na najlon pijaci i izvjesni Youtuber SIMI se htjeo fotografisati sa njim.Kupio je detektor metala za 10km.Popravlja SEGU na sekciji.Skoro je kupio novi skuter sa slike desno kojeg je sam sastavio(Home made).</font></b>
+</div>
+<p align="center"><b><font size="7">Srdjan Mitrovic</font></b></p>
+<div class="container">
+<img src="images/srki.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Ovo je Srdjan Mitrovic(Srki) predaje matematiku u nasoj skoli.Jako legendaran nastavnik  cij je kum upravo Pedja Todic a Pedjin mladji brat Miodrag Todic je njegov ucenik tako da je to jedna od tema za sprdanje u skoli.Iako je zabranjeno da se dijeca izbacuju sa casa u Osnovnoj skoli on to ipak radi jer se nikoga ne boji.</font></b>
+</div>
+<p align="center"><b><font size="7">Sasa Bajcetic(Bajceta)</font></b></p>
+<div class="container">
+  <div class="images">
+      <img src="images/bajci.png" alt=":(" width="20%" height="30%">
+      <img src="images/bajci2.jpg" alt=":(" width="20%" height="30%">
+  </div>
+  <b><font size="6">Ovo je Sasa Bajcetic(Bajceta) je nastavnik istorije u nasoj skoli.Hobi mu je alkohol a to mu je ujedno i posao konstantno je pijan kao letva.On se ovim hobijem bavi i profesionalno redovno ucestvuje na svjetskim turnirima ide na rakijade...Omiljeni hemijski sastav mu je C2H5OH(hemijski sastav alkohola).Fotografija sa desne strane je jedna rijetko vidjena fotografija.</font></b>
+</div>
+<p align="center"><b><font size="7">Dario Sekulic</font></b></p>
+<div class="container">
+    <div class="images">
+      <img src="images/dario.jpg" alt=":(" width="50%" height="55%">
+      <img src="images/sdario1.jpg" alt=":(" align="right" width="50%" height="55%">
+</div>
+<b><font size="6">Ovo je Dario Sekulic(Super Dario) je nastavnik fizike u nasoj skoli.Nadimak Super Dario dobio je po cuvenom digitronu koji je donjeo na cas.Ukratko mjenjao je nasu nastavnicu i radili smo jedan zadatak zbog koga je on nama predlozio da kupimo super digitrone sa vise opcija i eto odatle naziv Super Dario. </font></b>
+</div>
+<p align="center"><b><font size="7">Borisava Bogosavljevic</font></b></p>
+<div class="container">
+<img src="images/boba.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Ovo je Borisava Bogosavljevic(Boba) nastavnica biologije.Razredna je VIII-6 u nasoj skoli.Ona ima svoj privatni salon ljepote koji joj je primarni posao a za skolu je boli kurac.U 90% slucajeva ucenici IX-4 nemaju poslednji cas cetvrtkom(Biologiju) jer se njoj neda predavati ali to je korisno za sve ucenike tog razreda.Dobra je nastavnica pusta u pekaru ali zna nekome da se usere u ocjene. </font></b>
+</div>
+<p align="center"><b><font size="7">Ognjen Karaca</font></b></p>
+<div class="container">
+<img src="images/ogi.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Ovo je nastavnik Ognjen Karaca nastavnik istorije.Njegov kolega je izvjesni prof. dr. master Branko Santrac.Ovo je jedan od najboljih nastavnika u skoli koji nas uvijek pusti ranije i uvijek nas pusti da gledamo film na casu naravno film koji je vezan za istorijska desavanja.Kada ga pitamo da li mozemo u pekaru uvijek nam dopusti.Kada radimo kod njega test istampamo uvijek sta ce biti na istom odnosno odgovore na pitanja i nikad nas nije uhvatio ili to ne zeli.Sve u svemu jedan predobar nastavnik.</font></b>
+</div>
+<p align="center"><b><font size="7">Dejan Koprivica</font></b></p>
+<div class="container">
+<img src="images/FB_IMG_1683232064048.jpg" alt=":(" width="30%" height="55%">
+<b><font size="6">Ovo je nastavnik Dejan Koprivica(Zara) on je nastavnik istorije u centralnoj skoli.Imali smo priliku da se upoznamo sa njim naime vodio nas je u Donju Gradinu na izlet.Detaljnim ispitivanjem njegovog psihickog stanja utvrdili smo da on bas nije normalan(ima prebacaje iz mirnog stanja predje u agresivno) izvjesnom uceniku M.T. je htjeo udariti samarcinu da mu se krv prolije ali mu se kasnije izvinuo.Dozvolio je da unesemo alkohol i vejpove u autobus ali da ako nas uhvate da ne kazemo da nam je to on dozvolio.Pitali smo ga da li je on pio u toku skole a on nam je odgovorio citiram:"U Srednjoj skoli kada popije 1-2 piva to me obori ali sam se na faksu 4-5 godina rasturo" kraj citata.</font></b>
+</div>
+<p align="center"><b><font size="7">Dejana Borkovic</font></b></p>
+<div class="container">
+<img src="images/dejana.jpg" alt=":(">
+<b><font size="6">Ovo je Dejana Borkovic i ona predaje biologiju.Generaciji IX-ih razreda je predavala u VII-mom razredu kao zamjena.Ona ne zna da kaze slovo "R".I zato je bila zajebavana od strane ucenika.</font></b>
+</div>
+<p align="center"><b><font size="7">Ruza Kojic</font></b></p>
+<div class="container">
+<img src="images/ruza.png" alt="" width="30%" height="55%">
+<b><font size="6">Ovo je Ruza Kojic ona je razredan 8-4.Ona iako je nastavnik matematike u nasoj skoli ne zna da radi zadatke te bez svog kolege Srdjana Mitrovica ne bi znala da uradi ni jedan kompleksniji zadatak.Ona ima nepravilan izgovor(NE ZNA DA PRICA) posjeta logopedu nije na odmet ali ipak ne uci se star konj jahati(kako bi rekao nas narod).Za svaki odlazak ucenika u wc, obavezna je postjeta disciplinskoj komisiji. Ucenici imaju ceste sukobe sa nastavnicom, te cesto dobijaju neopravdane casove sa kojih ne smiju izaci.</font></b>
+</div>
+<p align="center"><b><font size="7">Milos Veljancic</font></b></p>
+<div class="container">
+<img src="images/pop.jpg" alt="" width="30%" height="55%">
+<b><font size="6">Ovo je Milos Veljancic i on je nastavnik vjeronauke.Trazi da se zna mnogo prilikom odgovaranja i ukoliko ucenik na casu posjeduje zvakacu gumu na odgovaranju ce dobiti ocjenu manje.Na kraju polugodista je ispao korektan te svima poklonio ocjene.</font></b>
+</div>
+<p align="center"><b><font size="7">Dijana Kovacevic</font></b></p>
+<div class="container">
+<img src="images/dijana.png" alt="" width="30%" height="55%">
+<b><font size="6">Ovo je Dijana Kovacevic.Ona je najgora nastavnica u skoli.Kod nje se takodje moze izraziti definicija neravnopravnosti te ima svoje miljenike.Ucenicima daje nadimke poput majmun,guska,kokoska...Tuce djecu sa letvom.</font></b>
+</div>
+<p align="center"><b><font size="7">Jela Bojic</font></b></p>
+<div class="container">
+<img src="images/jeasdasda.jpg" alt="">
+<b><font size="6">Ovo je Jela Bojic i ona predaje biologiju.</font></b>
+</div>
+<p align="center"><b><font size="7">Damir Hujdurovic</font></b></p>
+<div class="container">
+<img src="images/damke.jpg" alt="">
+<b><font size="6">Ovo je Damir Hujdurovic i on predaje Njemacki jezik.On je na zamjeni posto je nastavnica Dragana trudna.On je okej nastavanik ali steta je sto je na zamjeni.</font></b>
+</div>
+<p align="center"><b><font size="7">Amira Sehic</font></b></p>
+<div class="container">
+<img src="images/amira.jpg" alt="" width="30%" height="55%">
+<b><font size="6">Ovo je anstavnica Amira Sehic i ona predaje Njemacki jezik.Ona je napustila skolu 2023. godine zbog boljeg posla u Njemackoj.</font></b>
+</div>
+<p align="center"><b><font size="7">Gordana Mitrovic Pejic</font></b></p>
+<div class="container">
+<img src="images/goca.jpg" alt="" width="30%" height="55%">
+<b><font size="6">Ovo je Gordana Pejic(GOCILIIII) i ona predaje engleski jezik.</font></b>
+</div>
+<p align="center"><b><font size="7">Dajana Mijatovic Dragic</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6">gayayayayaysgd</font></b>
+</div>
+<p align="center"><b><font size="7">Silvija Kokanovic</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Dejan Tesic</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Svetlana Sarenac</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Vesna Mitrovic</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Dalibor Topic</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Zorana Cordasevic</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Olivera Vojdel</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Djole Fenix</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Zdravko Tesic</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Bojan Orbovic</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Andjelija</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Anka Ciganka</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Igor Kalajdzic</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">debela matematicarka Jovana</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Nina</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Milojica</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">Petar Vidakovic</font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+
+<p align="center"><b><font size="7"></font></b></p>
+<div class="container">
+<img src="" alt="">
+<b><font size="6"></font></b>
+</div>
+<p align="center"><b><font size="7">HVALA NA PAZNJI!!!!!!</font></b></p>
+</body>
+</html>
